@@ -1,7 +1,7 @@
 {
-    "name": "<your project name>",
+    "name": "set-lit",
     "version": "1.0.0",
-    "description": "<your description>",
+    "description": "Implement the Set card game with Lit elements",
     "main": "index.js",
   "scripts": {
     "start": "snowpack dev",
@@ -14,7 +14,7 @@
     "snowpack",
     "toolchain"
   ],
-  "author": "<your name>",
+  "author": "Rudolf Farkas",
   "license": "ISC",
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.13.0",
