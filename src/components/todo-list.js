@@ -1,10 +1,10 @@
-import { LitElement, html, css } from 'lit';
+import {LitElement, html, css} from 'lit';
 
 // source: https://lit.dev/tutorial/#08-finishing-touches
 
 export class ToDoList extends LitElement {
   static properties = {
-    listItems: { attribute: false },
+    listItems: {attribute: false},
     hideCompleted: {},
   };
   static styles = css`
@@ -12,37 +12,48 @@ export class ToDoList extends LitElement {
       text-decoration-line: line-through;
       color: #777;
     }
+    .wrap {
+      color: #00f;
+      border: 1px solid #00f;
+    }
   `;
 
   constructor() {
     super();
     this.listItems = [
-      { text: 'Make to-do list', completed: true },
-      { text: 'Complete Lit tutorial', completed: false },
+      {text: 'Make to-do list', completed: true},
+      {text: 'Complete Lit tutorial', completed: false},
     ];
     this.hideCompleted = false;
   }
 
   render() {
-    // TODO: Replace items definition.
-    const items = this.listItems;
+    const items = this.hideCompleted
+      ? this.listItems.filter((item) => !item.completed)
+      : this.listItems;
     const todos = html`
       <ul>
         ${items.map(
-          (item) => html` <li
-            class=${item.completed ? 'completed' : ''}
-            @click=${() => this.toggleCompleted(item)}>
-            ${item.text}
-          </li>`,
+          (item) => html`
+              <li
+                  class=${item.completed ? 'completed' : ''}
+                  @click=${() => this.toggleCompleted(item)}>
+                ${item.text}
+              </li>`
         )}
       </ul>
     `;
-    // TODO: Define partial templates.
+    const caughtUpMessage = html`
+      <p>
+      You're all caught up!
+      </p>
+    `;
+    const todosOrMessage = items.length > 0 ? todos : caughtUpMessage;
+
     return html`
-    <div
+    <div class="wrap"> 
       <h2>To Do</h2>
-      <!-- TODO: Update expression. -->
-      ${todos}
+      ${todosOrMessage}
       <input id="newitem" aria-label="New item">
       <button @click=${this.addToDo}>Add</button>
       <br>
@@ -52,9 +63,7 @@ export class ToDoList extends LitElement {
           ?checked=${this.hideCompleted}>
         Hide completed
       </label>
-    </div>
-
-
+      </div>
     `;
   }
 
@@ -72,7 +81,7 @@ export class ToDoList extends LitElement {
   }
 
   addToDo() {
-    this.listItems.push({ text: this.input.value, completed: false });
+    this.listItems.push({text: this.input.value, completed: false});
     this.input.value = '';
     this.requestUpdate();
   }
