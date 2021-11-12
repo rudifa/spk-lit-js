@@ -1,5 +1,5 @@
 {
-    "name": "set-lit",
+    "name": "spk-lit-js",
     "version": "1.0.0",
     "description": "Implement the Set card game with Lit elements",
     "main": "index.js",
