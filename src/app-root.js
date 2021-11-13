@@ -7,6 +7,7 @@ import { ToDoList } from './components/todo-list';
 import { NameTag } from './components/name-tag';
 import { DateElement } from './components/date/date-element';
 import { MyTimer } from './components/timer/my-timer.js';
+import { MyClock } from './components/clock/my-clock.js';
 
 @customElement('app-root')
 export class AppRoot extends LitElement {
@@ -25,6 +26,7 @@ export class AppRoot extends LitElement {
         <my-timer duration="7"></my-timer>
         <my-timer duration="60"></my-timer>
         <my-timer duration="300"></my-timer>
+        <my-clock></my-clock>
       </div>
     `;
   }
