@@ -1,4 +1,10 @@
-# New Project
+# Sample components from Lit documentation
+
+[Overview](https://lit.dev/docs/components/overview/)
+[Lit docs](https://lit.dev/docs/)
+[Lit Playground](https://lit.dev/playground/)
+
+## New Project
 
 > ✨ Bootstrapped with Create Snowpack App (CSA) with [app-template-lit-element](https://github.com/snowpackjs/snowpack/tree/main/create-snowpack-app/app-template-lit-element).
 
