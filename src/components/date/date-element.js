@@ -6,9 +6,17 @@ import './date-display.js';
 
 export class DateElement extends LitElement {
   static styles = css`
+      :host {
+      padding: 10px;
+      font-size: 1.5rem;
+    }
     .wrap {
       color: #00f;
       border: 1px solid #00f;
+    }
+    input,
+    button {
+      font-size: 1.0rem;
     }
   `;
   static properties = {

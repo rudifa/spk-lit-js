@@ -4,18 +4,27 @@ import { LitElement, html, css } from 'lit';
 
 export class NameTag extends LitElement {
   static styles = css`
+    :host {
+      padding: 10px;
+      font-size: 1.5rem;
+    }
     .wrap {
       color: #00f;
       border: 1px solid #00f;
+      font-size: 1.5rem;
+    }
+    input {
+      font-size: 1rem;
     }
   `;
+
   static properties = {
     name: {},
   };
 
   constructor() {
     super();
-    this.name = 'Your name here';
+    this.name = 'your name here';
   }
 
   changeName(event) {

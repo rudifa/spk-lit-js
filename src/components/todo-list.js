@@ -15,6 +15,11 @@ export class ToDoList extends LitElement {
     .wrap {
       color: #00f;
       border: 1px solid #00f;
+      font-size: 1.2rem;
+    }
+    input,
+    button {
+      font-size: 1rem;
     }
   `;
 
@@ -59,6 +64,7 @@ export class ToDoList extends LitElement {
             ?checked=${this.hideCompleted} />
           Hide completed
         </label>
+        </p> 
       </div>
     `;
   }

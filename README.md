@@ -10,6 +10,10 @@
 
 > ✨ Adapted by [rudifa](https://github.com/rudifa) to use Lit ^2.0.2 (instead of lit-element ^2.4.0, lit-html ^1.4.0
 
+## Usage
+
+>✨ Use it as a starter template for similar projects - remove the sample components and add your own.
+
 ## Available Scripts
 
 ### npm start
