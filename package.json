@@ -3,28 +3,28 @@
     "version": "1.0.0",
     "description": "Implement the Set card game with Lit elements",
     "main": "index.js",
-  "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
-    "test": "echo \"This template does not include a test runner by default.\" && exit 1",
-    "format": "prettier --write \"src/**/*.js\"",
-    "lint": "prettier --check \"src/**/*.js\""
-  },
-  "keywords": [
-    "snowpack",
-    "toolchain"
-  ],
-  "author": "Rudolf Farkas",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.14.5",
-    "@babel/plugin-proposal-decorators": "^7.15.8",
-    "@snowpack/plugin-babel": "^2.1.7",
-    "@snowpack/plugin-dotenv": "^2.2.0",
-    "prettier": "^2.4.1",
-    "snowpack": "^3.8.8"
-  },
-  "dependencies": {
-    "lit": "^2.0.2"
-  }
+    "scripts": {
+        "start": "snowpack dev",
+        "build": "snowpack build",
+        "test": "echo \"This template does not include a test runner by default.\" && exit 1",
+        "format": "prettier --write \"src/**/*.js\"",
+        "lint": "prettier --check \"src/**/*.js\""
+    },
+    "keywords": [
+        "snowpack",
+        "toolchain"
+    ],
+    "author": "Rudolf Farkas",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.14.5",
+        "@babel/plugin-proposal-decorators": "^7.15.8",
+        "@snowpack/plugin-babel": "^2.1.7",
+        "@snowpack/plugin-dotenv": "^2.2.0",
+        "prettier": "^2.4.1",
+        "snowpack": "^3.8.8"
+    },
+    "dependencies": {
+        "lit": "^2.0.2"
+    }
 }
