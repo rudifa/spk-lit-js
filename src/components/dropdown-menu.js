@@ -1,3 +1,5 @@
+/** @prettier */
+
 import { LitElement, html, css } from 'lit';
 
 // 1 support for event dispatching
