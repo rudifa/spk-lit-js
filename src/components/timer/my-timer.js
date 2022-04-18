@@ -15,7 +15,7 @@ export class MyTimer extends LitElement {
       display: inline-block;
       min-width: 9em;
       text-align: center;
-      padding: 0.2em;
+      padding: 10px;
       margin: 0.2em 0.1em;
     }
     footer {
@@ -29,6 +29,7 @@ export class MyTimer extends LitElement {
     .wrap {
       color: #00f;
       border: 1px solid #00f;
+      padding: 10px;
     }
   `;
 

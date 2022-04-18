@@ -18,6 +18,7 @@ export class MyClock extends LitElement {
     .wrap {
       color: #00f;
       border: 1px solid #00f;
+      padding: 10px;
     }
   `;
 

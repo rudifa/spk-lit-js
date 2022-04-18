@@ -16,6 +16,7 @@ export class ToDoList extends LitElement {
       color: #00f;
       border: 1px solid #00f;
       font-size: 1.2rem;
+      padding: 10px;
     }
     input,
     button {
